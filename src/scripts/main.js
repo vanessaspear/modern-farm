@@ -23,6 +23,14 @@ let harvest = harvestPlants(plants);
 
 console.log(harvest);
 
+import { catalog } from "./catalog.js";
+
+const parentHTMLElement = document.querySelector(".container");
+
+parentHTMLElement.innerHTML = catalog(harvest);
+
+catalog(harvest);
+
 
 
 
